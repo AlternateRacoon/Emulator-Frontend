@@ -434,11 +434,11 @@ while done:
                 system = "Snes"
             if first == "nes":
                 os.chdir(path_roms + "Nes/")
-                files = glob.glob("*.sfc")
+                files = glob.glob("*.nes")
                 os.chdir(path_thumb + "Nes/")
                 thumbnails_unfiltered = glob.glob("*.png")
                 for row in files:
-                    row = row.replace(".sfc", "")
+                    row = row.replace(".nes", "")
                     game_name.append(row)
                     for r in thumbnails_unfiltered:
                         if row in r:
