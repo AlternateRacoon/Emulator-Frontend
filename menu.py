@@ -301,6 +301,7 @@ while done:
                     first = first_s
                 if first_systems[row] == 2 and rect.y == 200:
                     first = first_s
+                    print(first)
                 if first_systems[row] == 3 and rect.y == 400:
                     first = first_s
                 if first_systems[row] == 4 and rect.y == 600:
